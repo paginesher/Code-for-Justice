@@ -1,6 +1,5 @@
 const locationBtn = document.querySelector("#getLocation")
 
-var x = document.getElementById("demo");
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -11,8 +10,6 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
     window.initMap = initMap(position);
 }
 locationBtn.addEventListener("click", getLocation())
