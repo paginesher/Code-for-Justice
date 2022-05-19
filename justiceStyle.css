@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*  NAVIGATION BAR STARTS HERE*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.9);
+    color: blanchedalmond;
+}
+
+
+/* LINKS TO NAV */
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    /* font-family: 'Lobster', cursive; */
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(127, 45, 61);
+}
+
+
+/*BUTTON THATS MOBILE RESPONCIVE  */
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(148, 207, 255);
+    border-radius: 10px;
+
+}
+
+/*  @ MEDIA ALLOWS DISPLAY TO BE BETTER ACCESSIBLE FOR SMALLER SCREENS*/
+@media screen and (max-width: 800px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+}
+
+li {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+
+    color: blanchedalmond;
+    /*REMOVES UNDERLINE DECORATION*/
+}
+
+a:visited {
+    text-decoration: none;
+    color: blanchedalmond;
+}
