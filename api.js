@@ -1,6 +1,5 @@
 const locationBtn = document.querySelector("#getLocation")
 
-
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
