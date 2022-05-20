@@ -14,7 +14,7 @@ function showPosition(position) {
 }
 locationBtn.addEventListener("click", getLocation())
 
-async function fetchAPI() {
+async function fetchAPI(position) {
     let response = await fetch('https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/25/query?where=1%3D1&outFields=*&outSR=4326&f=json');
     let data = await response.json();
     let info = data.features; //OWNER_RENTER PROVIDER ADDRESS WARD TYPE SUBTYPE STATUS NUMBER_OF_BEDS ON_SITE_MEDICAL_CLINIC AGES_SERVED HOW_TO_ACCESS WEB_URL
@@ -63,5 +63,6 @@ async function fetchAPI() {
         newContainer.append(access);
         newContainer.append(url);
     });
+    console.log(position);
 }
 // https://data.cityofchicago.org/resource/eep4-c978.json Info for Chicago homelessness crisis
