@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: rgb(179, 166, 166)
+    background-color: rgb(179, 166, 166);
 }
 
 /* HERO IMAGE IS HERE */
@@ -289,18 +289,17 @@ footer {
 
 .footer-responsive .footer-icons a {
     display: inline-block;
-    /* width: 30px;
-    height: 30px; */
+    width: 37.5px;
+    height: 36.5px;
     cursor: pointer;
     background-color: #ffffff;
     border: 2px solid white;
     border-radius: 50%;
-    font-size: 20px;
+    /* font-size: 20px; */
     color: white;
     text-align: center;
-    line-height: 35px;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .footer-responsive .footer-icons a:hover {
