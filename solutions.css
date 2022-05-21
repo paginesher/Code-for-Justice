@@ -1,0 +1,56 @@
+/* banner */
+.banner {
+    background-image: url("img/bg1.webp");
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+    background-position: center;
+    background-size: contain;
+
+
+}
+
+/* Program Names/Descriptions */
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 20px;
+
+}
+
+.program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.program img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.program h2 {
+    font-size: 3rem;
+}
+
+.program h3 {
+    font-size: 30px;
+    font-style: italic;
+
+}
+
+.program p {
+    font-size: 20px;
+    width: 85%;
+    font-weight: 500;
+
+}
+
+.mini {
+    color: rgb(60, 155, 187);
+    font-size: 25px;
+}
